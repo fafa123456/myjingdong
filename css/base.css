@@ -1,0 +1,456 @@
+/*样式初始化*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #f6f6f6;
+}
+.clearfloat:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col-red{
+    color: #ff0000;
+}
+a{
+    text-decoration: none;
+    color:#99a3b5;
+}
+li{
+    list-style:none;
+}
+.bx{
+    width: 1190px;
+    margin: 0 auto;
+}
+.fr {
+    float: right;
+}
+.fl{
+    float:left;
+}
+i{
+    text-style:normal;
+}
+input{
+    background: none;
+}
+input,button{
+    border: none;
+}
+@font-face {
+    font-family: "iconfont";
+    src:url("../font/iconfont.eot");
+    src:url("../font/iconfont.eot?#iefix") format("embedded-opentype"),
+    url("../font/iconfont.woff") format("woff"),
+    url("../font/iconfont.ttf") format("truetype"),
+    url("../font/iconfont.svg#iconfont") format("svg");
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-stroke-width:.2px;
+    -moz-osx-font-smoothing:grayscale;
+}
+/*广告栏区域开始*/
+.banner{
+    height: 80px;
+    background: #191645;
+}
+.banner .bx{
+    height: 80px;
+    background:url(../images/banner-bg.jpg) no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+.banner .bx a{
+    height: 80px;
+    display: block;
+}
+.banner .bx i.banner-i{
+    display:block;
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:5px;
+    right:5px;
+    color: #ffffff;
+    background:rgb(45,45,45);
+    opacity:0.3;
+    font-size: 30px;
+}
+/*网页的顶部*/
+.web-top{
+    height: 30px;
+    background:#e3e4e5;
+    line-height: 30px;
+    font-size:12px;
+}
+.web-top .top-l{
+   padding-left:209px;
+    color:#99a3b5;
+}
+.web-top .top-l i{
+    color:red;
+    font-size: 16px;
+}
+.web-top .iconfont{
+    font-size:10px;
+    color:#99a3b5;
+}
+.web-top ul li{
+    float: left;
+    padding: 0 10px;
+
+}
+.web-top ul li.xsj{
+    position: relative;
+    padding-right: 26px;
+}
+.web-top ul li i{
+    font-size:8px;
+    position: absolute;
+    top:2px;
+    right: 10px;
+}
+.web-top ul li.line{
+    height:10px;
+    width: 1px;
+    padding:0;
+    background-color:#ccc;
+    margin-top:10px;
+}
+.web-top ul li.sj{
+    position: relative;
+}
+.web-top ul li.sj span{
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:4px 6px;
+    border-color:transparent transparent  #fff transparent;
+    position: absolute;
+    bottom: 1px;
+    left: 29px;
+    z-index: 1;
+}
+.web-top ul li.sj .ewm{
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    bottom: -66px;
+    left:0;
+    border: 1px solid #ccc;
+    border-right: 0;
+    background:#fff url(../images/jd2wm_23.jpg);
+}
+
+/*网页的头部开始*/
+.header{
+    height: 140px;
+}
+.header .bx{
+    position: relative;
+}
+.header .logo{
+    width:190px;
+    height:170px;
+    background:#fff url(../images/jdlogo_03.jpg);
+    position: absolute;
+    top:-30px;
+}
+.header .logo h1 a{
+    color:transparent;
+    display: block;
+    width: 190px;
+    height: 170px;
+}
+.header .serach-nav .serach-l{
+    width: 550px;
+    height: 33px;
+    border:1px solid #ff0000;
+    position: absolute;
+    left: 320px;
+    top:25px;
+}
+.header .serach-nav .serach-l input{
+    float: left;
+    width: 490px;
+    height:33px;
+    padding-left:10px;
+}
+.header .serach-nav .serach-l button{
+    width:50px;
+    height:33px;
+    background:#ff0000;
+    float: left;
+}
+.header .serach-nav .serach-l button i{
+    color:#fff;
+    font-size:28px;
+} .header .serach-nav .gwc{
+      width: 188px;
+      height: 33px;
+      position: absolute;
+      top: 25px;
+      right:100px;
+      background:#ffffff ;
+    border: 1px solid #cfcfcf;
+    font-size: 12px;
+    color: red;
+    line-height: 33px;
+    text-align: center;
+  }
+.header .serach-nav .gwc i{
+    position: absolute;
+    top: 1px;
+    left: 40px;
+}
+.header .serach-nav .gwc span{
+    display:block;
+    width: 16px;
+    height: 16px;
+    background:#f00;
+    color:#fff;
+    position: absolute;
+    top:6px;
+    left:130px;
+    line-height: 16px;
+    border-radius: 50%;
+}
+.header .serach-nav .ssrd {
+    position: absolute;
+    top: 70px;
+    left: 320px;
+}
+.header .serach-nav .ssrd ul li{
+    float: left;
+    font-size: 12px;
+}
+.header .serach-nav .ssrd ul li+li{
+    padding-left: 10px;
+}
+
+.header .serach-nav .nav{
+    position: absolute;
+    top:100px;
+    height: 40px;
+    left:200px;
+}
+.header .serach-nav .nav ul li{
+    padding-left: 30px;
+    float: left;
+    font-size: 16px;
+}
+.header .serach-nav .nav ul li.line{
+    width: 1px;
+    height:10px;
+    padding:0;
+    background-color:#ccc;
+    margin-top:15px;
+    margin-left: 20px;
+}
+.header .serach-nav .nav ul li.line-1{
+    padding-left:20px ;
+}
+
+.header .serach-nav .nav ul li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color:#555555;
+    font-weight: 700;
+}
+.header .serach-nav .nav ul li a:hover{
+   color: #cf3704;
+}
+/*网页的头部结束*/
+/*网页的底部开始*/
+.footer{
+    background: #eaeaea;
+    height: 500px;
+}
+.footer ul.dkhs{
+    height:72px;
+    padding-left: 37px;
+    padding-top: 30px;
+    /*margin-bottom: 20px;*/
+}
+.footer ul.dkhs:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer .bx ul.dkhs li+li{
+    padding-left:90px;
+}
+.footer .bx ul.dkhs li h4, .footer .bx ul.dkhs li span,.footer .bx ul.dkhs li{
+    float:left;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.footer .bx ul.dkhs li h4{
+    width: 36px;
+    height: 42px;
+    background:url(../images/ico_service.png) ;
+    text-indent: -9999px;
+    margin-right: 9px;
+}
+.footer .bx ul.dkhs li h4.kuai{
+    background-position:0 -43px ;
+}
+.footer .bx ul.dkhs li h4.hao{
+    background-position:0 -86px ;
+}
+.footer .bx ul.dkhs li h4.sheng{
+    background-position:0 -129px ;
+}
+.footer .line{
+    height: 2px;
+    background:#dedede;
+}
+.footer .foot-c{
+    margin: 20px 0;
+}
+.footer .foot-c:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.footer .foot-c .foot-c-5{
+    width: 198px;
+    float: left;
+}
+.footer .foot-c .foot-c-5 h5{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font:700 14px "微软雅黑";
+    color: #666678;
+}
+.footer .foot-c .foot-c-5 ul li{
+    height: 22px;
+    line-height: 22px;
+}
+.footer .foot-c .foot-c-5 ul li a{
+    font-size: 12px;
+    color:#666666;
+}
+.footer .foot-c .xqms{
+    float: left;
+    width: 200px;
+    height: 150px;
+    background: url("../images/ico_footer.png");
+}
+.footer .foot-c .xqms h5{
+    margin-bottom: 18px;
+    margin-top: 5px;
+    font:700 14px "微软雅黑";
+    color: #666678;
+    text-align: center;
+}
+.footer .foot-c .xqms p.ms{
+    width: 172px;
+    margin-left: 12px;
+    line-height: 18px;
+    font-size: 12px;
+    color:#666
+}
+.footer .foot-c .xqms p.xq{
+    font-size: 12px;
+    text-align: right;
+    padding-right:13px ;
+}
+.footer .foot-c .xqms p.xq a{
+    color:#666
+}
+.footer .foot-c .xqms p.xq a:hover{
+    color:red;
+}
+.footer .gywm{
+    padding-top: 10px;
+    font-size: 12px;
+    width: 1077px;
+    margin: 0 auto;
+}
+.footer .gywm:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer .gywm a{
+    display: inline-block;
+    height: 35px;
+    line-height:35px;
+    color:#666666;
+    float: left;
+}
+.footer .gywm a:hover{
+    color:red;
+}
+.footer span.fgx{
+
+    display: inline-block;
+    height: 14px;
+    float: left;
+    width: 1px;
+    background: #d8d0d0;
+    vertical-align: middle;
+    margin:  10px  10px 0;
+}
+.footer span.fg{
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    background: #d8d0d0;
+    vertical-align: middle;
+    margin:  0  10px ;
+
+}
+.footer .p1{
+    font-size:12px;
+    text-align: center;
+    color: #999999;
+    line-height: 23px;
+}
+.footer .p1 a{
+    color: #999999;
+}
+.footer .baxx{
+    width: 650px;
+    height: 30px;
+    margin: 0 auto;
+}
+.footer .baxx>div{
+    width: 103px;
+    height: 30px;
+    float: left;
+    margin-top: 12px;
+    background: url("../images/ico_footer.png") no-repeat 0 -153px;
+}
+.footer .baxx>div+div{
+    margin-left:5px;
+}
+.footer .baxx .dbbj2{
+    background-position:-104px -153px ;
+}
+.footer .baxx .dbbj3{
+    background-position:0 -184px ;
+}
+.footer .baxx .dbbj4{
+    background-position:-104px -184px ;
+}
+.footer .baxx .dbbj5{
+    background-position:0 -215px ;
+}
+.footer .baxx .dbbj6{
+    background-position:-104px -215px ;
+}
+
+/*网页的底部结束*/
